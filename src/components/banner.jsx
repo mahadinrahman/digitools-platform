@@ -16,8 +16,10 @@ const Banner = () => {
                 New: AI Power Tools Available</p> 
                 <h2 className='text-4xl md:text-5xl font-bold leading-15'>Supercharge Your<br></br> Digital Workflow</h2>
       <p className="py-6 leading-6 text-gray-600">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+       Access premium AI tools, design assets, templates, and productivity
+software—all in one place. Start creating faster today.
+
+Explore Products
       </p>
       <button className="btn btn-primary rounded-full mr-3 mb-3 md:mb-0">Explore Products</button>
       <button className="btn btn-primary rounded-full btn-outline"><Play></Play>Watch Demo</button>

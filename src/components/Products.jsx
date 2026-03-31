@@ -1,8 +1,12 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import ProductCards from './ProductCards';
+import SelectedCarts from './SelectedCarts';
 
-const Products = ({cardPromise}) => {
+const Products = ({cardPromise,selected,setSelected}) => {
     const datas=use(cardPromise);
+
+    const [isSelected,setIsSelected]=useState(true);
+    
     
       
     return (
@@ -14,14 +18,14 @@ const Products = ({cardPromise}) => {
            
            
             <div className='flex justify-center'>
-                <button  className='btn btn-primary btn-outline rounded-r-none rounded-2xl'>Products</button>
-            <button className='btn btn-primary btn-outline rounded-l-none rounded-2xl'>Carts(0)</button>
+                <button onClick={()=>setIsSelected(true)} className={`btn ${isSelected==true?"btn-primary" :""}  rounded-r-none rounded-2xl`}>Products</button>
+            <button onClick={()=>setIsSelected(false)} className={`btn ${isSelected==false?"btn-primary" :""}  rounded-l-none rounded-2xl`}>Carts ({selected.length})</button>
             </div>
              </div>
             </div>
-            <div className='grid grid-cols-3 gap-5 mb-8'>
+            <div className={isSelected? "grid grid-cols-1 md:grid-cols-3 gap-5 mb-8" :"block mt-5"}>
                 {
-                datas.map((data,index)=> <ProductCards data={data} key={index}></ProductCards>)
+                isSelected==true ? datas.map((data,index)=> <ProductCards data={data} key={index} selected={selected} setSelected={setSelected}></ProductCards>):<SelectedCarts selected={selected} setSelected={setSelected}></SelectedCarts>
             }
             
             </div>
