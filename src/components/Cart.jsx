@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({selectedCart,selected,setSelected}) => {
       
@@ -18,7 +19,11 @@ const Cart = ({selectedCart,selected,setSelected}) => {
                 <p className='text-gray-600 text-lg'>${selectedCart.price}</p>
             </div>
            </div>
-           <button onClick={()=>deleteCart(selectedCart)} className='text-red-500'>Remove</button>
+           <button onClick={()=>{
+            deleteCart(selectedCart);
+            toast.warn("Remove From Cart!");
+        }
+            } className='text-red-500'>Remove</button>
           </div>
           
     );

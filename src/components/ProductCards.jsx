@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Feature from './Feature';
+import { toast } from 'react-toastify';
 
 const ProductCards = ({data,setSelected,selected}) => {
     const {features}=data;
@@ -17,10 +18,18 @@ const ProductCards = ({data,setSelected,selected}) => {
                 features.map((feature,index)=><Feature feature={feature} key={index}></Feature>)
             }
             <button onClick={()=>{
+                const exists=selected.find(item=>item.name===data.name);
+                if(!exists){
                 setSelected([...selected,data]);
                 setBuyNow(true);
+                toast.success(`${data.name} selected`);
+                
+               }
+               else{
+                toast.error("Already Selected");
+               }
             }
-                }
+        }
                   className={`btn ${buyNow==true? "bg-fuchsia-700" :"bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"}   btn-primary w-full rounded-full mt-2 `}>{buyNow==true? "Selected into Cart" :"Buy Now"}</button>
         </div>
         
