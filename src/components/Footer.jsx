@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='max-w-11/12 mx-auto'>
                 <div className='grid grid-cols-2 md:grid-cols-5 gap-7 border-b-1 border-gray-400 pb-10'>
                <div>
-                  <h2 className='text-2xl font-bold mb-4'>DigiTools</h2>
+                  <h2 className='text-3xl font-bold mb-4'>DigiTools</h2>
                   <p className='text-gray-400'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                </div>
                <div>
@@ -44,7 +44,7 @@ const Footer = () => {
                </div>
             </div>
             <div className='md:flex justify-between'>
-                <p className=' text-gray-400 mt-10'>© 2024 DigiTools. All rights reserved.</p>
+                <p className=' text-gray-400 mt-10'>© 2026 DigiTools. All rights reserved.</p>
                <div className='flex gap-5 text-gray-400 mt-10'>
                 <p>Privacy policy</p>
                 <p>Terms of service</p>
