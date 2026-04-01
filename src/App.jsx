@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/GetStarted'
 import Workflow from './Workflow'
 import Pricing from './components/Pricing'
+import Footer from './components/Footer'
 
 
 const cardPromise=fetch('data.json').then(res=>res.json());
@@ -28,6 +29,7 @@ function App() {
       <GetStarted></GetStarted>
       <Pricing></Pricing>
      <Workflow></Workflow>
+     <Footer></Footer>
      
      <ToastContainer></ToastContainer>
     </>
