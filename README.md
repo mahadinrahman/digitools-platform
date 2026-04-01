@@ -1,16 +1,29 @@
-# React + Vite
+//***************************//
+Project name:DIGITOOLS-PLATFORM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
+This project is a digital tools selling platform where users can explore various packages of digital tools from the Products section. Each package is presented clearly, allowing users to choose the one that fits their needs. When a user clicks the “Buy Now” button, the selected package is added to the cart section.
 
-Currently, two official plugins are available:
+The cart system is designed to be flexible and user-friendly — users can remove items individually or clear all selected carts at once. Additionally, the total cost of all selected packages is automatically calculated and displayed in real-time, providing a smooth and efficient shopping experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+//***************************//
+Tech stack:
 
-## React Compiler
+*React.js
+*Tailwind CSS,
+*DaisyUI,
+*JavaScript (ES6+),
+*React-Toastify (NPM Package),
+*JSON (for product data)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+//*************************//
+Features:
 
-## Expanding the ESLint configuration
+🛍️ Package Browsing System
+Users can easily explore different digital tool packages from the “Products” section.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛒 Smart Cart Management
+By clicking the “Buy Now” button, packages are added to the cart. Users can remove items individually or clear all carts at once.
+
+💰 Real-time Total Price Calculation
+The total cost of all selected packages is automatically calculated and displayed.
