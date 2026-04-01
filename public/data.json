@@ -7,7 +7,7 @@
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
-    "image":"../src/assets/design-tool.png",
+    "image":"./design-tool.png",
     "features": [
       "10+ templates",
       "Basic customization",
@@ -22,7 +22,7 @@
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "image":"../src/assets/operation.png",
+    "image":"./operation.png",
     "features": [
       "100+ templates",
       "ATS optimization",
@@ -37,7 +37,7 @@
     "period": "monthly",
     "tag": "best seller",
     "tagType": "best seller",
-    "image":"../src/assets/portfolio.png",
+    "image":"./portfolio.png",
     "features": [
       "Resume builder",
       "Cover letter generator",
@@ -52,7 +52,7 @@
     "period": "yearly",
     "tag": "popular",
     "tagType": "popular",
-    "image":"../src/assets/shopping-cart.png",
+    "image":"./shopping-cart.png",
     "features": [
       "Unlimited resumes",
       "Priority support",
@@ -67,7 +67,7 @@
     "period": "monthly",
     "tag": "new",
     "tagType": "new",
-    "image":"../src/assets/social-media.png",
+    "image":"./social-media.png",
     "features": [
       "Student templates",
       "Internship resume format",
@@ -82,7 +82,7 @@
     "period": "yearly",
     "tag": "best seller",
     "tagType": "best seller",
-    "image":"../src/assets/writing_2327400 1.png",
+    "image":"./writing_2327400 1.png",
     "features": [
       "Executive templates",
       "LinkedIn optimization",
